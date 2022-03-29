@@ -4,10 +4,10 @@ class Dashcard extends Component {
   state = {};
   render() {
     return (
-      <div className="reviewcard flex-col-hstart-vstart clip-contents">
-        <div className="review flex-col-hstart-vstart clip-contents">
-          <div className="heading flex-row-vcenter-hstart">
-            <p className="txt-087">Reagan P</p>
+      <div className="8u">
+        <div>
+          <div>
+            <p>Reagan P</p>
           </div>
           <p className="txt-4106">
             Thrhhc hhgij vfgjhd chjjvfhjj gdghbgghbgj bbjjjgffgh bbhgh

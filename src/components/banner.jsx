@@ -10,7 +10,7 @@ class Banner extends Component {
           <div className="bannerPara">
             <div>Ut enim ad minim veniam quis nostrud</div>
           </div>
-          <div className="button flex-row-vcenter-hcenter">
+          <div>
             <button>Primary</button>
           </div>
         </div>
