@@ -4,7 +4,7 @@ class ContentLeft extends Component {
   state = {};
   render() {
     return (
-      <div className="card">
+      <div className="8u card">
         <div>
           <div>
             <img
