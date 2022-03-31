@@ -4,13 +4,11 @@ import DataButton from "./components/testComp";
 import Dashcard from "./components/dashcard";
 import "./App.css";
 
-import { BrowserRouter } from "react-router-dom";
-
 function App() {
   return (
     <div>
       <div className="App">
-        <header className="App-header">
+        <header id="header" className="App-header">
           <Navbar />
         </header>
         <div>

@@ -25,19 +25,15 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.static("public"));
 app.use((req, res, next) => {
-  console.log("talkin");
   next();
 });
 
 //routes
 //read all
 app.get("/property", (req, res) => {
-  console.log("hello");
   pool
     .query("SELECT * FROM property")
     .then((result) => {
-      console.log(result);
-      console.log(result.rows);
       res.send(result.rows);
     })
     .catch((err) => res.send(500));

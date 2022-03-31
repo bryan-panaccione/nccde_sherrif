@@ -14,7 +14,7 @@ class Navbar extends Component {
             />
           </Link>
         </div>
-        <ul className="headNavList">
+        <ul id="nav" className="headNavList">
           <Link to="/home">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
