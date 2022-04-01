@@ -1,8 +1,11 @@
 import Navbar from "./components/navbar";
 import Banner from "./components/banner";
-import DataButton from "./components/testComp";
-import Dashcard from "./components/dashcard";
+import FilterCard from "./components/filterPropsCard";
+import ExportCard from "./components/exportCard";
+import PropertyView from "./components/propViewCard";
 import Mapcard from "./components/mapCard";
+import PropertyTable from "./components/propertyTable";
+import Footer from "./components/footer";
 import "./App.css";
 
 function App() {
@@ -16,23 +19,15 @@ function App() {
           <Banner />
           <div className="container">
             <div className="row homeGrid">
-              {" "}
               <Mapcard />
-              <Dashcard />
-              <Dashcard />
-              <Dashcard />
-              <DataButton />
+              <PropertyView />
+              <FilterCard />
+              <ExportCard />
             </div>
           </div>
+          <PropertyTable />
+          <Footer />
         </div>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          targent="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </div>
     </div>
   );

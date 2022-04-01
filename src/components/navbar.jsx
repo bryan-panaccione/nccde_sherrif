@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee, fa3, faBell } from "@fortawesome/free-solid-svg-icons";
 
 class Navbar extends Component {
   state = {};
@@ -16,31 +18,39 @@ class Navbar extends Component {
         </div>
         <ul id="nav" className="headNavList">
           <li>
-            <Link to="/home">Home</Link>
+            <Link className="mainOpt" to="/home">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link className="mainOpt" to="/about">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link className="mainOpt" to="/contact">
+              Contact
+            </Link>
           </li>
           <li>
-            <Link to="/about">Account</Link>
+            <Link className="mainOpt" to="/about">
+              Account
+            </Link>
           </li>
 
           <li>
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/p3kwjkyx75-1802%3A2459?alt=media&token=3ba2693c-f1a7-4fa5-acef-a37176979b20"
-              alt="Not Found"
-              className="icon navHeadIcon"
-            />
+            <Link to="/">
+              <FontAwesomeIcon icon={faBell} className="navHeadIcon" />
+            </Link>
           </li>
           <li>
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/p3kwjkyx75-2342%3A3410?alt=media&token=b3052524-5dff-4f62-9bb5-95f5a657056e"
-              alt="Not Found"
-              className="image navHeadImage"
-            />
+            <Link to="/">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/p3kwjkyx75-2342%3A3410?alt=media&token=b3052524-5dff-4f62-9bb5-95f5a657056e"
+                alt="Not Found"
+                className="image navHeadImage"
+              />
+            </Link>
           </li>
         </ul>
       </nav>
