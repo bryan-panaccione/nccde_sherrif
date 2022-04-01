@@ -15,10 +15,19 @@ class Navbar extends Component {
           </Link>
         </div>
         <ul id="nav" className="headNavList">
-          <Link to="/home">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/about">Account</Link>
+          <li>
+            <Link to="/home">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/about">Account</Link>
+          </li>
+
           <li>
             <img
               src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/p3kwjkyx75-1802%3A2459?alt=media&token=3ba2693c-f1a7-4fa5-acef-a37176979b20"

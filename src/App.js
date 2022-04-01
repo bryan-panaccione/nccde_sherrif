@@ -2,6 +2,7 @@ import Navbar from "./components/navbar";
 import Banner from "./components/banner";
 import DataButton from "./components/testComp";
 import Dashcard from "./components/dashcard";
+import Mapcard from "./components/mapCard";
 import "./App.css";
 
 function App() {
@@ -13,8 +14,16 @@ function App() {
         </header>
         <div>
           <Banner />
-          <DataButton />
-          <Dashcard />
+          <div className="container">
+            <div className="row homeGrid">
+              {" "}
+              <Mapcard />
+              <Dashcard />
+              <Dashcard />
+              <Dashcard />
+              <DataButton />
+            </div>
+          </div>
         </div>
         <a
           className="App-link"

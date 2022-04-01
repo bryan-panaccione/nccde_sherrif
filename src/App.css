@@ -44,11 +44,13 @@
   }
 }
 .banner {
-  height: 25rem;
-  background-image: url("/public/img/IMG_0970.JPG");
+  height: 30rem;
+  background-color: var(--page-top);
   background-size: cover;
-
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .bannerText {
@@ -101,11 +103,6 @@ th {
   overflow-wrap: break-word;
 }
 
-/* Map*/
-
-#map {
-  height: 25rem !important;
-}
 /* Basic */
 
 :root {
@@ -133,6 +130,7 @@ th {
   --width-card-medium: 460px;
   --width-card-wide: 800px;
   --width-content: 1080px;
+  --page-top: #eea811;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -225,6 +223,7 @@ main header {
 
 header {
   text-align: var(--justify-important);
+  background-color: var(--page-top);
 }
 
 header a b,
@@ -250,7 +249,7 @@ nav {
   display: flex;
   font-weight: bold;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  background-color: var(--page-top);
 }
 
 nav ul {
@@ -262,7 +261,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 0 0.5rem;
+  margin: 0 1rem;
   position: relative;
   text-align: left;
 }
@@ -307,6 +306,11 @@ nav ul li ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#header {
+  display: inline;
+  justify-content: space-evenly;
 }
 
 /* Typography */
@@ -596,4 +600,35 @@ blockquote footer {
   font-size: small;
   line-height: var(--line-height);
   padding: 1.5rem 0;
+}
+
+/* Cards */
+
+.card-primary {
+  background-color: #ebebfd;
+  margin: 1.5rem;
+  box-shadow: 10px 6px 8px #c7c7c7;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.homeGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*MAP */
+.leaflet-container {
+  width: 100%;
+  height: 25rem;
+  box-shadow: 3px 4px 10px 9px #c7c7c7;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+#map {
+  width: 43%;
+  padding-left: 0.5rem !important;
 }
