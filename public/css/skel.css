@@ -237,9 +237,11 @@ body {
   clear: both;
   height: 0;
 }
+/*
 .row:first-child > * {
   padding-top: 0 !important;
 }
+*/
 .row.uniform > * > :first-child {
   margin-top: 0;
 }
