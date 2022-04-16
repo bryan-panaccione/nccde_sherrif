@@ -7,13 +7,10 @@ class Navbar extends Component {
   state = {};
   render() {
     return (
-      <nav>
+      <nav id={this.props.id}>
         <div className="navLogo">
           <Link to="/">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/p3kwjkyx75-2166%3A2676?alt=media&token=907a9044-2503-4778-b808-c1b8eb15f2f1"
-              alt="Not Found"
-            />
+            <img className="iconLeft" src="/img/siteIcon.svg" alt="Not Found" />
           </Link>
         </div>
         <ul id="nav" className="headNavList">
