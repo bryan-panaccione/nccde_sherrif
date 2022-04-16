@@ -5,16 +5,16 @@ import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import About from "./components/routes/about";
-import Home from "./components/routes/home";
+import Property_Page from "./components/routes/properties";
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="about" element={<About />} />
-      <Route path="contact" element={<Home />} />
-      <Route path="account" element={<Home />} />
-      <Route path="home" element={<Home />} />
+      <Route path="contact" element={<Property_Page />} />
+      <Route path="account" element={<Property_Page />} />
+      <Route path="properties" element={<Property_Page />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")

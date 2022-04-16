@@ -5,6 +5,7 @@ import ExportCard from "./components/exportCard";
 import PropertyView from "./components/propViewCard";
 import Mapcard from "./components/mapCard";
 import PropertyTable from "./components/propertyTable";
+import DataButton from "./components/testComp";
 import Footer from "./components/footer";
 import "./App.css";
 
@@ -16,16 +17,13 @@ function App() {
           <Navbar />
         </header>
         <div>
-          <Banner />
-          <div className="container">
-            <div className="row homeGrid">
-              <Mapcard />
-              <PropertyView />
-              <FilterCard />
-              <ExportCard />
-            </div>
-          </div>
-          <PropertyTable />
+          <Banner
+            title="Parse"
+            tagLine="Data Parsing and Visualization Software"
+          />
+          <DataButton />
+          <div className="container"></div>
+
           <Footer />
         </div>
       </div>

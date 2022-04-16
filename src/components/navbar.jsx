@@ -18,18 +18,13 @@ class Navbar extends Component {
         </div>
         <ul id="nav" className="headNavList">
           <li>
-            <Link className="mainOpt" to="/home">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className="mainOpt" to="/about">
-              About
+            <Link className="mainOpt" to="/properties">
+              Properties
             </Link>
           </li>
           <li>
             <Link className="mainOpt" to="/contact">
-              Contact
+              Help
             </Link>
           </li>
           <li>

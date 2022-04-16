@@ -55,13 +55,13 @@ class PropertyView extends Component {
             </div>
           </div>
           <div className="paginateControls">
-            <div onClick={this.paginateDown}>
+            <button className="button alt" onClick={this.paginateDown}>
               <FontAwesomeIcon icon={faArrowLeft} />
-            </div>
+            </button>
             {this.state.currentPage}
-            <div onClick={this.paginateUp}>
+            <button className="button alt" onClick={this.paginateUp}>
               <FontAwesomeIcon icon={faArrowRight} />
-            </div>
+            </button>
           </div>
         </div>
       </Dashcard>
