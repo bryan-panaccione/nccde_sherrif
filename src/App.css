@@ -726,3 +726,21 @@ blockquote footer {
   font-size: x-large;
   margin-top: 2rem;
 }
+
+/* Main/Home Page*/
+
+.contentCenter {
+  display: flex;
+  justify-content: space-around;
+  height: 20rem;
+}
+
+.contentLeft {
+  display: flex;
+  justify-content: center;
+}
+
+.contentImage {
+  display: flex;
+  height: 10rem;
+}
