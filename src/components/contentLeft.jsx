@@ -4,9 +4,11 @@ class ContentLeft extends Component {
   state = {};
   render() {
     return (
-      <div className="row">
-        <div className="8u contentLeft">{this.props.children[0]}</div>
-        <div className="4u descriptionRight">{this.props.children[1]}</div>
+      <div className="container">
+        <div className="row infoSection">
+          <div className="6u contentLeft">{this.props.children[0]}</div>
+          <div className="6u descriptionRight">{this.props.children[1]}</div>
+        </div>
       </div>
     );
   }

@@ -28,7 +28,7 @@ function App() {
               src="/img/IMG_0970.JPG"
               alt="Not Found"
             />
-            <div>
+            <div className="wordsContainer">
               <h2>Property Mapping</h2>
               <p>
                 Visualize property locations, listed by New Castle County as
@@ -37,7 +37,7 @@ function App() {
             </div>
           </ContentLeft>
           <DataButton />
-          <div className="container"></div>
+
           <Footer />
         </div>
       </div>

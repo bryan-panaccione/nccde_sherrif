@@ -742,5 +742,11 @@ blockquote footer {
 
 .contentImage {
   display: flex;
-  height: 10rem;
+  height: 20rem;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
