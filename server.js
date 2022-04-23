@@ -2,7 +2,6 @@ var express = require("express");
 var pkg = require("pg");
 var dotenv = require("dotenv");
 var cors = require("cors");
-var nodemailer = require("nodemailer");
 
 dotenv.config();
 

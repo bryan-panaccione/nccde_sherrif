@@ -10,10 +10,14 @@ function Contact() {
     <div>
       <div className="App">
         <header id="header" className="App-header">
-          <Navbar id="propPageNav" />
+          <Navbar id="propPageNav2" />
         </header>
         <div>
-          <Banner id="propPageBanner" title="Contact Us" tagLine="x" />
+          <Banner
+            id="contactBanner"
+            title="Contact Us"
+            tagLine="We love feedback and Questions"
+          />
           <ContactForm />
           <Footer />
         </div>

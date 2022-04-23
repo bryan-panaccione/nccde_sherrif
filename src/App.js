@@ -7,6 +7,7 @@ import ContentRight from "./components/contentRight";
 import PriceCard from "./components/priceCard";
 import Footer from "./components/footer";
 import "./App.css";
+import DemoVideo from "./components/demoVideo";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
             title="Parse"
             tagLine="Data Parsing and Visualization Software"
           />
-
+          <DemoVideo />
           <ContentLeft>
             <img
               className="contentImage"

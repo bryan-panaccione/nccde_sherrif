@@ -1,10 +1,33 @@
-import React, { Component } from "react";
+import React, { Component, createElement } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, fa3, faBell } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCoffee,
+  fa3,
+  faBell,
+  faFaceGrin,
+} from "@fortawesome/free-solid-svg-icons";
 
 class Navbar extends Component {
-  state = {};
+  state = {
+    testData: ["late payment", "new properties added", "discount deal 4 u"],
+    hasAlert: null,
+    dropDownState: "hidden",
+  };
+
+  checkAlert = () => {
+    if (this.state.dropDownState === "hidden") {
+      this.setState({ dropDownState: "dropdownMenu" });
+    }
+    if (this.state.dropDownState === "dropdownMenu") {
+      this.setState({ dropDownState: "hidden" });
+    }
+    if (this.state.testData.length > 0) {
+      this.setState((this.state.hasAlert = null));
+    } else {
+      this.setState((this.state.hasAlert = [true]));
+    }
+  };
   render() {
     return (
       <nav id={this.props.id}>
@@ -31,9 +54,21 @@ class Navbar extends Component {
           </li>
 
           <li>
-            <Link to="/">
-              <FontAwesomeIcon icon={faBell} className="navHeadIcon" />
-            </Link>
+            <FontAwesomeIcon
+              icon={this.state.hasAlert ? faBell : faFaceGrin}
+              onClick={this.checkAlert}
+              className={this.state.hasAlert ? "navHeadIconRED" : "navHeadIcon"}
+            />
+            <div className={this.state.dropDownState}>
+              {this.state.testData.map((alerts, key) => {
+                return (
+                  <div className="alertItem" key={key}>
+                    {alerts}
+                    <hr className="dropDownHR"></hr>
+                  </div>
+                );
+              })}
+            </div>
           </li>
           <li>
             <Link to="/">

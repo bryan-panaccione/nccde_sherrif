@@ -1,8 +1,12 @@
 import React, { useState } from "react";
+import ExampleComponent from "./recaptcha.jsx";
 
 const ContactForm = () => {
+  const [status, setStatus] = useState("Submit");
+  const [formStatus, disableForm] = useState(null);
   const handleSubmit = (e) => {
     e.preventDefault();
+    setStatus("Sending...");
     const { name, email, message } = e.target;
     const endpoint =
       "https://b57ez6wej9.execute-api.us-east-1.amazonaws.com/default/sendContactEmail";
@@ -20,15 +24,19 @@ const ContactForm = () => {
     fetch(endpoint, requestOptions)
       .then((results) => results.json())
       .then((data) => {
+        disableForm("disabled");
+        setStatus("Thank You!");
+        name.value = "";
+        email.value = "";
+        message.value = "";
         console.log(data);
       })
       .catch((error) => {
-        document.getElementById("result-text").innerText =
-          "An unkown error occured.";
+        console.log("error in the request");
       });
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="contactForm" onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" required />
@@ -41,7 +49,10 @@ const ContactForm = () => {
         <label htmlFor="message">Message:</label>
         <textarea id="message" required />
       </div>
-      <button type="submit">Submit</button>
+      <button disabled={formStatus} type="submit">
+        {status}
+      </button>
+      <ExampleComponent ref={formStatus} />
     </form>
   );
 };
