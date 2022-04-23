@@ -6,13 +6,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import About from "./components/routes/about";
 import Property_Page from "./components/routes/properties";
+import Contact from "./components/routes/contact";
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="about" element={<About />} />
-      <Route path="contact" element={<Property_Page />} />
+      <Route path="contact" element={<Contact />} />
       <Route path="account" element={<Property_Page />} />
       <Route path="properties" element={<Property_Page />} />
     </Routes>

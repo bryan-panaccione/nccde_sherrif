@@ -1,6 +1,8 @@
 var express = require("express");
 var pkg = require("pg");
 var dotenv = require("dotenv");
+var cors = require("cors");
+var nodemailer = require("nodemailer");
 
 dotenv.config();
 
@@ -21,6 +23,7 @@ const pool = new Pool({
 // });
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 app.use(express.urlencoded());

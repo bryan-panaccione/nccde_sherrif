@@ -79,3 +79,15 @@ textarea {
   padding-left: 0 !important;
   width: 100vw !important;
 }
+
+.infoSection {
+  flex-direction: column !important;
+}
+
+.contentImage {
+  width: 40vw !important;
+}
+
+.imageRight {
+  padding: 0;
+}

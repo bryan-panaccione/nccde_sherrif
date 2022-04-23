@@ -317,8 +317,9 @@ h1 {
   font-weight: 800;
 }
 h2 {
-  font-size: x-large;
+  font-size: 2rem;
   font-weight: 700;
+  padding-bottom: 1.5rem;
 }
 mark {
   padding: 0.1rem;
@@ -732,7 +733,7 @@ blockquote footer {
 .contentCenter {
   display: flex;
   justify-content: space-around;
-  height: 20rem;
+  padding-top: 2rem;
 }
 
 .contentLeft {
@@ -742,11 +743,42 @@ blockquote footer {
 
 .contentImage {
   display: flex;
-  height: 20rem;
+  width: 20vw;
+  padding-bottom: 1rem;
 }
 
 .infoSection {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.wordsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricingHeader {
+  color: #005d9c;
+  font-size: 36px;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.imageRight {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }

@@ -80,3 +80,8 @@ header.major h2 + p {
   padding-left: 0;
   display: block;
 }
+
+.contentCenter {
+  flex-direction: column !important;
+  align-items: center !important;
+}
