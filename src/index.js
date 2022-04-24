@@ -7,6 +7,10 @@ import reportWebVitals from "./reportWebVitals";
 import About from "./components/routes/about";
 import Property_Page from "./components/routes/properties";
 import Contact from "./components/routes/contact";
+import Realtors from "./components/routes/realtors";
+import Contractors from "./components/routes/contractors";
+import Tradesmen from "./components/routes/tradesmen";
+import Lenders from "./components/routes/lenders";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -16,6 +20,10 @@ ReactDOM.render(
       <Route path="contact" element={<Contact />} />
       <Route path="account" element={<Property_Page />} />
       <Route path="properties" element={<Property_Page />} />
+      <Route path="realtors" element={<Realtors />} />
+      <Route path="contractors" element={<Contractors />} />
+      <Route path="tradesmen" element={<Tradesmen />} />
+      <Route path="lenders" element={<Lenders />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")

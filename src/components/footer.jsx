@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -19,22 +19,36 @@ class Footer extends Component {
                 <h3>Local Connections</h3>
                 <ul>
                   <li>
-                    <a href="#">Realtors</a>
+                    <Link className="mainOpt" to="/realtors">
+                      Realtors
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Contractors</a>
+                    <Link className="mainOpt" to="/contractors">
+                      Contractors
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Tradesmen</a>
+                    <Link className="mainOpt" to="/tradesmen">
+                      Tradesmen
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Lenders</a>
+                    <Link className="mainOpt" to="/lenders">
+                      Lenders
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="6u">
               <h2>We Want Your Feedback</h2>
+              <h3>
+                {" "}
+                <Link className="mainOpt" to="/contact">
+                  Contact Us
+                </Link>
+              </h3>
               <p>
                 This project is a developed by investors, for investors to make
                 due-diligence easy, fast and simple. If you have features to

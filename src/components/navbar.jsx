@@ -1,12 +1,7 @@
 import React, { Component, createElement } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCoffee,
-  fa3,
-  faBell,
-  faFaceGrin,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCoffee, faBell } from "@fortawesome/free-solid-svg-icons";
 
 class Navbar extends Component {
   state = {
