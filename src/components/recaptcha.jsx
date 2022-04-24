@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ReCaptcha } from "react-recaptcha-google";
-class ExampleComponent extends Component {
+class RecaptchaRegular extends Component {
   constructor(props, context) {
     super(props, context);
     this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this);
@@ -40,4 +40,4 @@ class ExampleComponent extends Component {
     );
   }
 }
-export default ExampleComponent;
+export default RecaptchaRegular;

@@ -5,7 +5,9 @@ class ContentCenter extends Component {
   render() {
     return (
       <div>
-        <div className="contentCenter">{this.props.children}</div>
+        <div className="contentCenter" id={this.props.id}>
+          {this.props.children}
+        </div>
       </div>
     );
   }

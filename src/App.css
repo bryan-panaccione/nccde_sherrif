@@ -44,6 +44,10 @@
     --color-text-secondary: #aaa;
   }
 }
+
+.centerText {
+  text-align: center;
+}
 .banner {
   height: 20rem;
   background-color: var(--page-top);
@@ -60,6 +64,11 @@
   flex-direction: column;
   margin-top: 3rem;
 }
+
+#bannerContactTitle {
+  margin-top: 3rem;
+}
+
 .bannerTitle {
   color: white;
 }
@@ -694,6 +703,10 @@ blockquote footer {
   display: flex;
 }
 
+.iconLink {
+  color: white;
+}
+
 .icons svg {
   margin-right: 2rem;
   font-size: 2rem;
@@ -794,6 +807,19 @@ blockquote footer {
   align-items: center;
 }
 
+.contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactGroup {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
 #contactBanner {
   height: 5rem !important;
   background-color: #333;
@@ -808,6 +834,7 @@ blockquote footer {
 
 #videoDemonstration {
   margin: 2rem;
+  width: 100%;
 }
 
 .hidden {

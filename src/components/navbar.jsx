@@ -10,22 +10,27 @@ import {
 
 class Navbar extends Component {
   state = {
-    testData: ["late payment", "new properties added", "discount deal 4 u"],
+    testData: ["dkdkj", "ldjfa;lk", "kjhdaf"],
+    alertReadStatus: false,
     hasAlert: null,
     dropDownState: "hidden",
+  };
+
+  markRead = () => {
+    this.setState({ alertReadStatus: true });
+  };
+
+  markUnRead = () => {
+    this.setState({ alertReadStatus: false });
   };
 
   checkAlert = () => {
     if (this.state.dropDownState === "hidden") {
       this.setState({ dropDownState: "dropdownMenu" });
+      this.markRead();
     }
     if (this.state.dropDownState === "dropdownMenu") {
       this.setState({ dropDownState: "hidden" });
-    }
-    if (this.state.testData.length > 0) {
-      this.setState((this.state.hasAlert = null));
-    } else {
-      this.setState((this.state.hasAlert = [true]));
     }
   };
   render() {
@@ -55,9 +60,13 @@ class Navbar extends Component {
 
           <li>
             <FontAwesomeIcon
-              icon={this.state.hasAlert ? faBell : faFaceGrin}
+              icon={
+                this.state.alertReadStatus && this.state.testData.length > 0
+                  ? faCoffee
+                  : faBell
+              }
               onClick={this.checkAlert}
-              className={this.state.hasAlert ? "navHeadIconRED" : "navHeadIcon"}
+              className="navHeadIcon"
             />
             <div className={this.state.dropDownState}>
               {this.state.testData.map((alerts, key) => {

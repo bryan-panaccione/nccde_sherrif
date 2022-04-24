@@ -5,7 +5,9 @@ class Banner extends Component {
     return (
       <div className="banner" id={this.props.id}>
         <div className="bannerText">
-          <h1 className="bannerTitle">{this.props.title}</h1>
+          <h1 className="bannerTitle" id={this.props.bannerID}>
+            {this.props.title}
+          </h1>
           <div className="bannerPara">
             <div>{this.props.tagLine}</div>
           </div>

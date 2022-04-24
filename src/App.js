@@ -88,7 +88,7 @@ function App() {
               <button className="signUpButton">Sign Up</button>
             </PriceCard>
             <PriceCard>
-              <h3>Premium Access- All Features</h3>
+              <h3>Premium Access</h3>
               <div className="pricingHeader">$98 /month</div>
               <button className="signUpButton">Sign Up</button>
             </PriceCard>

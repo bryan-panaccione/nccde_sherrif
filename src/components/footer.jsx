@@ -43,11 +43,15 @@ class Footer extends Component {
                 <a href="mailto:bp@rqpcreative.com">bp@rqpcreative.com</a>
               </p>
               <div className="icons">
-                <FontAwesomeIcon icon={faFacebook} />
-
-                <FontAwesomeIcon icon={faLinkedin} />
-
-                <FontAwesomeIcon icon={faGithub} />
+                <a className="iconLink" href="https://www.google.com">
+                  <FontAwesomeIcon icon={faFacebook} />
+                </a>
+                <a className="iconLink" href="https://www.google.com">
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a className="iconLink" href="https://www.google.com">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
               </div>
             </div>
             <ul className="copyright">

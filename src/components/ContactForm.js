@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ExampleComponent from "./recaptcha.jsx";
+import RecaptchaRegular from "./recaptcha.jsx";
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
@@ -52,7 +52,7 @@ const ContactForm = () => {
       <button disabled={formStatus} type="submit">
         {status}
       </button>
-      <ExampleComponent ref={formStatus} />
+      <RecaptchaRegular ref={formStatus} />
     </form>
   );
 };
