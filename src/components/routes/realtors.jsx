@@ -1,6 +1,6 @@
 import Navbar from "../navbar";
 import Footer from "../footer";
-
+import RealtorList from "../realtorList";
 import Banner from "../banner";
 
 function Realtors() {
@@ -17,6 +17,7 @@ function Realtors() {
             tagLine="Verified, Trusted and Reliable Realtors in New Castle County"
             bannerID="realtorBanner"
           />
+          <RealtorList />
           <Footer />
         </div>
       </div>

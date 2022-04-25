@@ -96,3 +96,8 @@ textarea {
 .iconLeft {
   margin-top: 4rem !important;
 }
+
+.referralWords {
+  flex-direction: column;
+  align-items: center !important;
+}
