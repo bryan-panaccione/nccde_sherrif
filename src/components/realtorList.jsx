@@ -71,9 +71,14 @@ class RealtorList extends Component {
                     className="refProfile"
                   />
                   <div className="referralWordsOnly">
-                    <h2>{item.agentName}</h2>
+                    <h2>
+                      {item.agentName}{" "}
+                      <button className="contactReferralButton">Contact</button>
+                    </h2>
                     <p>{item.broker}</p>
-                    <p>{item.expertise}</p>
+                    <p>
+                      {item.expertise} | Years of Experience: {item.yoe}
+                    </p>
                     <p>{item.about}</p>
                   </div>
                 </div>
