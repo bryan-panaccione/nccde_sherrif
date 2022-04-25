@@ -101,3 +101,9 @@ textarea {
   flex-direction: column;
   align-items: center !important;
 }
+
+.agentTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

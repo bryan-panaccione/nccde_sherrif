@@ -8,6 +8,7 @@ const agents = [
     status: "Ready for New Clients",
     coverPhoto: "../img/tempProfiles/cover1.jpg",
     profilePhoto: "../img/tempProfiles/agent1.jpg",
+    agentEmail: "liam@liam.com",
     about:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, amet eligendi reiciendis nemo magni doloremque eius nihil! Nemo, animi sapiente odio at qui mollitia doloremque aut totam laboriosam numquam dicta deserunt dolores quam necessitatibus possimus aperiam quod blanditiis iusto delectus fugiat sint perspiciatis reprehenderit eum. Eaque nulla quas eos vita",
   },
@@ -20,6 +21,7 @@ const agents = [
     status: "Ready for New Clients",
     coverPhoto: "../img/tempProfiles/cover2.jpg",
     profilePhoto: "../img/tempProfiles/agent2.jpg",
+    agentEmail: "kat@ryn.com",
     about:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, amet eligendi reiciendis nemo magni doloremque eius nihil! Nemo, animi sapiente odio at qui mollitia doloremque aut totam laboriosam numquam dicta deserunt dolores quam necessitatibus possimus aperiam quod blanditiis iusto delectus fugiat sint perspiciatis reprehenderit eum. Eaque nulla quas eos vita",
   },
@@ -32,6 +34,7 @@ const agents = [
     status: "Ready for New Clients",
     coverPhoto: "../img/tempProfiles/cover3.jpg",
     profilePhoto: "../img/tempProfiles/agent3.jpg",
+    agentEmail: "tyler@tyler.com",
     about:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, amet eligendi reiciendis nemo magni doloremque eius nihil! Nemo, animi sapiente odio at qui mollitia doloremque aut totam laboriosam numquam dicta deserunt dolores quam necessitatibus possimus aperiam quod blanditiis iusto delectus fugiat sint perspiciatis reprehenderit eum. Eaque nulla quas eos vita",
   },

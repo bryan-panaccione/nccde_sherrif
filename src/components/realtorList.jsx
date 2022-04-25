@@ -1,61 +1,34 @@
 import React, { Component } from "react";
 import * as FAKE_AGENTS from "../fakeRealtors";
+import ContactFormSpecial from "./ContactFormSpecial";
 
 class RealtorList extends Component {
   state = {
     agentList: FAKE_AGENTS.getagents(),
     img: "https://picsum.photos/400/200",
+    hiddenBoolean: true,
   };
 
-  cardBody = {
-    color: "black",
-  };
-
-  cardText = {
-    display: "flex",
-    marginBottom: 40,
-    flexDirection: "column",
-    alignItems: "flex-start",
-  };
-
-  cardInfo = {
-    fontSize: 15,
-  };
-
-  cardBottom = {
-    width: 100,
-    fontSize: 15,
-  };
-
-  eraseCard = (e) => {
-    const cardDel =
+  showForm = (e) => {
+    if (this.state.hiddenBoolean === false) {
+      this.setState({ hiddenBoolean: true });
+      return;
+    }
+    const selectedAgent =
       e.target.parentNode.parentNode.parentNode.parentNode.parentNode;
-    cardDel.remove();
-    const cardTainer = document.querySelector(".row");
-    const logo = document.querySelector(".App-logo");
-    if (cardTainer.childElementCount === 2) {
-      let lastTwoCard = document.querySelectorAll(".col");
-      lastTwoCard.forEach((card) => card.classList.add("col2"));
-    }
-    if (cardTainer.childElementCount === 1) {
-      const lastCard = document.querySelector(".col");
-      lastCard.classList.remove("col2");
-      lastCard.classList.add("col1");
-    }
-    if (cardTainer.childElementCount === 0) {
-      //cardTainer.innerHTML = "<div>No agents remaining</div>";
-      let hiddenCake = document.querySelector(".hiddenCake");
-      hiddenCake.classList.remove("hiddenCake");
-    }
+    selectedAgent.children[0].className = "notHidden";
   };
 
-  selectCover = () => {};
   render() {
     return (
       <div>
         {this.state.agentList.map((item, key) => {
           return (
             <div key={key} className="10u card-primary">
+              <ContactFormSpecial agent={item.agentName}>
+                {" "}
+                <div> {item.agentEmail}</div>{" "}
+              </ContactFormSpecial>
               <div className="cardGuts">
                 <div className="referralCover">
                   <img
@@ -71,9 +44,14 @@ class RealtorList extends Component {
                     className="refProfile"
                   />
                   <div className="referralWordsOnly">
-                    <h2>
+                    <h2 className="agentTitle">
                       {item.agentName}{" "}
-                      <button className="contactReferralButton">Contact</button>
+                      <button
+                        className="contactReferralButton"
+                        onClick={this.showForm}
+                      >
+                        Connect
+                      </button>
                     </h2>
                     <p>{item.broker}</p>
                     <p>
