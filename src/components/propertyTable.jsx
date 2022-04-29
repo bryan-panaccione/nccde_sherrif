@@ -6,8 +6,7 @@ class PropertyTable extends Component {
     return (
       <section id="two">
         <header className="blendHead">
-          <h2>Commodo accumsan aliquam</h2>
-          <p>Amet nisi nunc lorem accumsan</p>
+          <h2>Property Table</h2>
         </header>
         <div className="container">
           <div className="12u">

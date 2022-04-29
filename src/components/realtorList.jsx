@@ -5,15 +5,9 @@ import ContactFormSpecial from "./ContactFormSpecial";
 class RealtorList extends Component {
   state = {
     agentList: FAKE_AGENTS.getagents(),
-    img: "https://picsum.photos/400/200",
-    hiddenBoolean: true,
   };
 
   showForm = (e) => {
-    if (this.state.hiddenBoolean === false) {
-      this.setState({ hiddenBoolean: true });
-      return;
-    }
     const selectedAgent =
       e.target.parentNode.parentNode.parentNode.parentNode.parentNode;
     selectedAgent.children[0].className = "notHidden";
@@ -58,6 +52,13 @@ class RealtorList extends Component {
                       {item.expertise} | Years of Experience: {item.yoe}
                     </p>
                     <p>{item.about}</p>
+                    <div className="realtorIconsContainer">
+                      <img
+                        src="../img/tempProfiles/fairHousingRealtor.svg"
+                        alt="realtor logos"
+                        className="realtorIcons"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

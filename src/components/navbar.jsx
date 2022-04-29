@@ -2,27 +2,16 @@ import React, { Component, createElement } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faBell } from "@fortawesome/free-solid-svg-icons";
-
+import * as TEST_DATA from "../fakeRealtors";
+import AlertStatus from "./alertMessage";
 class Navbar extends Component {
   state = {
-    testData: ["dkdkj", "ldjfa;lk", "kjhdaf"],
-    alertReadStatus: false,
-    hasAlert: null,
     dropDownState: "hidden",
-  };
-
-  markRead = () => {
-    this.setState({ alertReadStatus: true });
-  };
-
-  markUnRead = () => {
-    this.setState({ alertReadStatus: false });
   };
 
   checkAlert = () => {
     if (this.state.dropDownState === "hidden") {
       this.setState({ dropDownState: "dropdownMenu" });
-      this.markRead();
     }
     if (this.state.dropDownState === "dropdownMenu") {
       this.setState({ dropDownState: "hidden" });
@@ -53,21 +42,13 @@ class Navbar extends Component {
             </Link>
           </li>
 
-          <li>
-            <FontAwesomeIcon
-              icon={
-                this.state.alertReadStatus && this.state.testData.length > 0
-                  ? faCoffee
-                  : faBell
-              }
-              onClick={this.checkAlert}
-              className="navHeadIcon"
-            />
+          <li onClick={this.checkAlert} className="navHeadIcon">
+            <AlertStatus messageData={TEST_DATA.agents} />
             <div className={this.state.dropDownState}>
-              {this.state.testData.map((alerts, key) => {
+              {TEST_DATA.agents.map((alerts, key) => {
                 return (
                   <div className="alertItem" key={key}>
-                    {alerts}
+                    {alerts.agentEmail}
                     <hr className="dropDownHR"></hr>
                   </div>
                 );

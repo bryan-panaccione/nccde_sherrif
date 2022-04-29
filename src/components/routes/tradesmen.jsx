@@ -15,7 +15,7 @@ function Tradesmen() {
             id="contactBanner"
             title="Tradesmen"
             tagLine="Verified, Trusted and Reliable Tradesmen in New Castle County"
-            bannerID="realtorBanner"
+            bannerID="bannerContactTitle"
           />
           <Footer />
         </div>

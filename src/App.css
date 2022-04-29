@@ -922,3 +922,13 @@ path {
 .secretEmail {
   display: none;
 }
+
+.realtorIcons {
+  height: 3rem;
+}
+
+.realtorIconsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

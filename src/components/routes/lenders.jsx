@@ -15,7 +15,7 @@ function Lenders() {
             id="contactBanner"
             title="Lenders"
             tagLine="Verified, Trusted and Reliable Lenders in New Castle County"
-            bannerID="realtorBanner"
+            bannerID="bannerContactTitle"
           />
           <Footer />
         </div>

@@ -1,55 +1,55 @@
-export const agents = [
+export const builders = [
   {
     _id: "1",
-    agentName: "Liam O'Neill",
+    builderName: "Liam O'Neill",
     expertise: "First Timers, Investors",
     yoe: 5,
     broker: "Patterson Schwarz",
     status: "Ready for New Clients",
     coverPhoto: "../img/tempProfiles/cover1.jpg",
-    profilePhoto: "../img/tempProfiles/agent1.jpg",
-    agentEmail: "liam@liam.com",
+    profilePhoto: "../img/tempProfiles/builder1.jpg",
+    builderEmail: "liam@liam.com",
     about:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, amet eligendi reiciendis nemo magni doloremque eius nihil! Nemo, animi sapiente odio at qui mollitia doloremque aut totam laboriosam numquam dicta deserunt dolores quam necessitatibus possimus aperiam quod blanditiis iusto delectus fugiat sint perspiciatis reprehenderit eum. Eaque nulla quas eos vita",
   },
   {
     _id: "2",
-    agentName: "Kathryn Matic",
+    builderName: "Kathryn Matic",
     expertise: "First Timers, Investors",
     yoe: 1,
     broker: "Patterson Schwarz",
     status: "Ready for New Clients",
     coverPhoto: "../img/tempProfiles/cover2.jpg",
-    profilePhoto: "../img/tempProfiles/agent2.jpg",
-    agentEmail: "kat@ryn.com",
+    profilePhoto: "../img/tempProfiles/builder2.jpg",
+    builderEmail: "kat@ryn.com",
     about:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, amet eligendi reiciendis nemo magni doloremque eius nihil! Nemo, animi sapiente odio at qui mollitia doloremque aut totam laboriosam numquam dicta deserunt dolores quam necessitatibus possimus aperiam quod blanditiis iusto delectus fugiat sint perspiciatis reprehenderit eum. Eaque nulla quas eos vita",
   },
   {
     _id: "3",
-    agentName: "Tyler Pseniscka",
+    builderName: "Tyler Pseniscka",
     expertise: "Commercial",
     yoe: 2,
     broker: "PRE Commercial Real Estate",
     status: "Ready for New Clients",
     coverPhoto: "../img/tempProfiles/cover3.jpg",
-    profilePhoto: "../img/tempProfiles/agent3.jpg",
-    agentEmail: "tyler@tyler.com",
+    profilePhoto: "../img/tempProfiles/builder3.jpg",
+    builderEmail: "tyler@tyler.com",
     about:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, amet eligendi reiciendis nemo magni doloremque eius nihil! Nemo, animi sapiente odio at qui mollitia doloremque aut totam laboriosam numquam dicta deserunt dolores quam necessitatibus possimus aperiam quod blanditiis iusto delectus fugiat sint perspiciatis reprehenderit eum. Eaque nulla quas eos vita",
   },
 ];
 
-export function getagents() {
-  return agents;
+export function getbuilders() {
+  return builders;
 }
 
-export function getagent(id) {
-  return agents.find((m) => m._id === id);
+export function getbuilder(id) {
+  return builders.find((m) => m._id === id);
 }
 
-export function deleteagent(id) {
-  let agentInDb = agents.find((m) => m._id === id);
-  agents.splice(agents.indexOf(agentInDb), 1);
-  return agentInDb;
+export function deletebuilder(id) {
+  let builderInDb = builders.find((m) => m._id === id);
+  builders.splice(builders.indexOf(builderInDb), 1);
+  return builderInDb;
 }

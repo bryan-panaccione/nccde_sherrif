@@ -107,3 +107,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
+
+.realtorIconsContainer {
+  align-items: center !important;
+}

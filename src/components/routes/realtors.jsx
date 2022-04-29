@@ -15,7 +15,7 @@ function Realtors() {
             id="contactBanner"
             title="Realtors"
             tagLine="Verified, Trusted and Reliable Realtors in New Castle County"
-            bannerID="realtorBanner"
+            bannerID="bannerContactTitle"
           />
           <RealtorList />
           <Footer />

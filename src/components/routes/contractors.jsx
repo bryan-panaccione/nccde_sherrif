@@ -15,7 +15,7 @@ function Contractors() {
             id="contactBanner"
             title="Contractors"
             tagLine="Verified, Trusted and Reliable Contractors in New Castle County"
-            bannerID="realtorBanner"
+            bannerID="bannerContactTitle"
           />
           <Footer />
         </div>
